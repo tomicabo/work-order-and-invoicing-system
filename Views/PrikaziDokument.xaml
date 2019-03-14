@@ -1,0 +1,8 @@
+﻿<Window x:Class="POSSavkovic.Views.PrikaziDokument"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="1122.5" Width="793.7" Closing="Window_Closing">
+    <Grid>
+
+    </Grid>
+</Window>

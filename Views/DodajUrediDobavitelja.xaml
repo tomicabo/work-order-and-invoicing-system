@@ -1,0 +1,50 @@
+﻿<Window x:Class="POSSavkovic.Views.DodajUrediDobavitelja"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POSSavkovic.Views"
+        mc:Ignorable="d"
+        Title="DodajUrediDobavitelja" Height="230" Width="350" Closing="Window_Closing" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Topmost="True" ShowInTaskbar="False">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Height="165" VerticalAlignment="Top">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"></ColumnDefinition>
+                        <ColumnDefinition Width="70"></ColumnDefinition>
+                        <ColumnDefinition Width="240"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"></RowDefinition>
+                        <RowDefinition Height="22"></RowDefinition>
+                        <RowDefinition Height="22"></RowDefinition>
+                        <RowDefinition Height="22"></RowDefinition>
+                        <RowDefinition Height="22"></RowDefinition>
+                        <RowDefinition Height="22"></RowDefinition>
+                        <RowDefinition Height="22"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">Podjetje</TextBlock>
+                    <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">Naslov</TextBlock>
+                    <TextBlock Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">Pošta</TextBlock>
+                    <TextBlock Grid.Row="4" Grid.Column="1" VerticalAlignment="Center">Država</TextBlock>
+                    <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Center">Davčna št.</TextBlock>
+
+                    <TextBox Grid.Row="1" Grid.Column="2" Name="tb_podjetje"></TextBox>
+                    <TextBox Grid.Row="2" Grid.Column="2" Name="tb_naslov"></TextBox>
+                    <TextBox Grid.Row="3" Grid.Column="2" Name="tb_posta"></TextBox>
+                    <TextBox Grid.Row="4" Grid.Column="2" Name="tb_drzava"></TextBox>
+                    <TextBox Grid.Row="5" Grid.Column="2" Name="tb_davcna_st"></TextBox>
+
+                </Grid>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Name="btn_preklici" Width="100" HorizontalAlignment="Right" Margin="0,0,15,0" Click="btn_preklici_Click">Prekliči</Button>
+                <Button Name="btn_dodaj" Visibility="Collapsed" Width="100" HorizontalAlignment="Right" Margin="0,0,25,0" Click="btn_dodaj_Click">Dodaj</Button>
+                <Button Name="btn_uredi" Visibility="Collapsed" Width="100" HorizontalAlignment="Right" Margin="0,0,25,0" Click="btn_uredi_Click">Shrani</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

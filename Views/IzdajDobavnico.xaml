@@ -1,0 +1,28 @@
+﻿<Window x:Class="POSSavkovic.Views.IzdajDobavnico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POSSavkovic.Views"
+        mc:Ignorable="d"
+        Title="Izdaj Dobavnico" Height="140" Width="280" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="20">
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Height="100" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical" Width="110" HorizontalAlignment="Left" >
+                    <TextBlock Margin="2">Št. Naročila</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Width="120" HorizontalAlignment="Left">
+
+                    <TextBox Name="tb_st_narocila"></TextBox>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Height="20" Width="100" Margin="0,0,20,0" Click="Button_Click">Prekliči</Button>
+                <Button Height="20" Width="100" Click="Button_Click_1">Izdaj Dobavnico</Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
